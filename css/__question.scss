@@ -1,0 +1,51 @@
+// question
+
+.question{
+  max-width: 600px;
+  margin: 5rem auto;
+  .text-wrap{
+    text-align: center;
+  }
+  .accordion{
+    margin: 2.5rem 0;
+    .accordion-item{
+      background-color: $lightColor;
+      margin-bottom: 0.5rem;
+      padding: 1rem;
+     
+      .accordion-link{
+        width: 100%;
+        // border: black solid 1px;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        // border-bottom: $SemiDarkColor solid 2px;
+        i{
+          padding: .5rem;
+        }
+        .fa-chevron-down{
+          display: none;
+        }
+      }
+      .answer{
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        transition: 1s;
+        border-bottom: $SemiDarkColor solid 2px;
+      }
+    }
+    .accordion-item:target .accordion-link{
+      color: red;
+    }
+    .accordion-item:target .answer{
+      max-height: 20rem;
+    }
+    .accordion-item:target .accordion-link .fa-chevron-up{
+      display: none;
+    }
+    .accordion-item:target .accordion-link .fa-chevron-down{
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// slide control
+.slide-control{
+  height: 80px;
+  text-align: center;
+  
+  a{
+    border-bottom: $SemiDarkColor solid 2px;
+    padding: 10px 2rem;
+    font-size: 1rem;
+    color: $SemiDarkColor;
+    cursor: pointer;
+    &:hover{
+      color: $secondColor;
+      border-bottom: $secondColor solid 2px;
+    }
+  
+  }
+  
+}
+
+
+// end slide control

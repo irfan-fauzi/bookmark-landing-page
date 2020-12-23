@@ -1,0 +1,41 @@
+// start hero
+.hero{
+  overflow-x: visible;
+  height: 500px;
+  position: relative;
+  .hero-text-wrap{
+    position: relative;
+    bottom: 1rem;
+    p{
+      margin: 20px 0;
+    }
+    .flex-start{
+      .btn-outline{
+        margin-left: 1rem;
+      }
+    }
+    h1{
+      font-size: 3rem;
+    }
+  }
+  .hero-images{
+    position: relative;
+    left: 30px;
+    
+  
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 3.5rem;
+    width: 450px;
+    height: 280px;
+    background-color: $primaryColor;
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    z-index: -1;
+  }
+}
+
+// end hero

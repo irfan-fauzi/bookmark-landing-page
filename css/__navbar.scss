@@ -1,0 +1,29 @@
+// navbar
+.navbar{
+ 
+  height: 90px;
+  .logo-nav{
+    width: 200px;
+  }
+  .menus{
+    .btn-nav{
+      padding: 5px 2rem;
+      background-color: $secondColor;
+      color: $lightColor;
+      &:hover{
+        background-color: #fff;
+        border: solid $secondColor 1px;
+        color: $darkColor;
+      }
+    }
+    a{
+      padding: 10px;
+      margin-right: 1rem;
+      transition: 0.3s;
+      &:hover{
+        color: $secondColor;
+      }
+    }
+  }
+}
+// end navbar

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+// COLOR
+$primaryColor : hsl(231, 69%, 60%);
+$secondColor : hsl(0, 94%, 66%);
+$SemiDarkColor : hsl(229, 8%, 60%);
+$darkColor : hsl(229, 31%, 21%);
+
+$lightColor : #f4f4f4;
+$succesColor : #5cb85c;
+$erorColor :  #d9534f;
+$textColor : #333;
+
+$gradient : linear-gradient(to right, #7126c5, #6024bb, #4e22b0, #3c20a6, #271d9b);
+// END COLOR
+
+// mixin
+@mixin flex-horizontal($justify-content) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content;
+  height: 100%;
+}
+@mixin flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+
+// this mixin to set the width same as 1100px
+@mixin container {
+  overflow: auto; // to hide space because we add margin in every h1 an h2 element in global.scss
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+@mixin card {
+  color: #333;
+ // background-color: #ffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px; // menambah margin akan membuat lebar card mengecil
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@mixin btn {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+// end mixin

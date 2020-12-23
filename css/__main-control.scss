@@ -1,0 +1,33 @@
+// main control
+.slide-main{
+  height: 450px;
+  position: relative;
+  .flex-vertical{
+    height: 400px;
+    overflow-y: hidden;
+    .grid{
+      position: relative;
+      flex-shrink: 0;
+      padding: 2rem;
+      .text-wrap{
+       position: relative;
+       left: 3rem;
+       top: -2rem;
+      }
+    
+    }
+  }
+ 
+ &::before{
+  position: absolute;
+  content: "";
+  top: 4rem;
+  width: 450px;
+  height: 340px;
+  background-color: $primaryColor;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  z-index: -1;
+ }
+}
+// end main control

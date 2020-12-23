@@ -1,0 +1,29 @@
+// footer
+.footer{
+  height: 70px;
+  .logo-nav{
+    width: 200px;
+  }
+  .menus{
+    
+
+      a{
+        padding: 10px;
+        margin-right: 1rem;
+        transition: 0.3s;
+        &:hover{
+          color: $secondColor;
+        }
+      }
+  
+  }
+  .social{
+    .fab{
+      margin-left: 1rem;
+      transition: 0.3s;
+      &:hover{
+        color: $secondColor;
+      }
+    }
+  }
+}
