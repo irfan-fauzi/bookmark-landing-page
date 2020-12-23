@@ -7,6 +7,13 @@ const share = document.querySelector(".slide-control .share");
 
 const slideControl = document.querySelector(".slide-control");
 
+const menus = document.querySelector(".menus");
+
+doc.addEventListener("click", function (e) {
+  if (e.target.className == "togle") {
+    menus.classList.toggle("slide");
+  }
+});
 
 
 slideControl.addEventListener("click", function (e) {

@@ -1,6 +1,8 @@
 // navbar
 .navbar{
- 
+  .menu-togle{
+    display: none;
+  }
   height: 90px;
   .logo-nav{
     width: 200px;
@@ -25,5 +27,99 @@
       }
     }
   }
-}
+ 
 // end navbar
+
+
+@media only screen and (max-width: 768px) {
+ 
+  .logo-nav{
+    max-width: 170px;
+  }
+  .menus{
+    // display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: black;
+    opacity: 0.9;
+    right: 0;
+    z-index: 3;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    transition: all 0.5s;
+    a{
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    .btn{
+      background-color: transparent;
+      border: white solid 1px;
+      width: 80%;
+      
+    }
+    li{
+     text-align: center;
+     opacity: 1;
+     text-transform: uppercase;
+     border-bottom: rgb(38, 37, 37) solid 1px;
+     width: 90%;
+     margin-top: -10rem;
+    }
+  }
+  .slide{
+    display: flex;
+  }
+  
+
+ // hamburger menu
+ .menu-togle{
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  background-color: transparent;
+  position: relative;
+  z-index: 3;
+  span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.2s;
+    &:nth-child(2){
+      transform-origin: 0 0; // mengubah poros rotasi
+    }
+    &:nth-child(4){
+      transform-origin: 0 100%;
+    }
+   
+  }
+  input{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 28px;
+    width: 40px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+    &:checked ~ span:nth-child(2){
+      transform: rotate(40deg);
+      background-color: #fff;
+    }
+    &:checked ~ span:nth-child(4){
+      transform: rotate(-40deg);
+      background-color: #fff;
+    }
+    &:checked ~ span:nth-child(3){
+      transform: scale(0);
+    }
+  }
+}
+}
+ 
+} 
