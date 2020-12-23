@@ -466,8 +466,9 @@ img {
 
 .hero {
   overflow-x: visible;
-  height: 500px;
+  height: 550px;
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .hero .hero-text-wrap {
@@ -828,7 +829,7 @@ img {
     font-size: 0.7rem;
   }
   .features-head {
-    margin-top: -3rem;
+    margin-top: -10rem;
   }
   .slide-control {
     height: 200px;
